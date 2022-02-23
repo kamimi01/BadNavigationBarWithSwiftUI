@@ -1,7 +1,9 @@
 ## 概要
 
 - nav barの色を`UINavigationBar.appearance()`以外で変更しようと頑張ったコード
-- 参考のqiita記事の通りやってみたけどnav barの色はどの画面も白のまま
+- 参考のqiita記事の通りやってみたけどnav barの色はどの画面も白のままで、うまくいかなかった
+
+![](./Image/app.gif)
 
 ## 参考
 
