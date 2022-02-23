@@ -9,8 +9,17 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView {
+            NavigationLink("次の画面へ", destination: SecondView())
+                .navigationBarTitle("1番目", displayMode: .inline)
+                .background(NavigationConfigurator { nc in
+                    // UIKitでNavigationBarのスタイルを変更するのと同じ方法でOK
+                    nc.navigationBar.barTintColor = .blue
+                    nc.navigationBar.tintColor = .white
+                    nc.navigationBar.titleTextAttributes = [.foregroundColor : UIColor.white]
+                })
+        }
+        
     }
 }
 
